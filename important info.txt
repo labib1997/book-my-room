@@ -1,0 +1,21 @@
+User name:  
+hasan
+Host name:  
+localhost
+ 
+Password: 12345
+
+CREATE TABLE users (
+  userid int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  userfullname varchar(100) NOT NULL,
+  useremail varchar(100) NOT NULL,
+  userpassword varchar(100) NOT NULL
+) 
+CREATE TABLE renter (
+  renterid int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name varchar(100) NOT NULL,
+  address varchar(100) NOT NULL,
+  email varchar(100) NOT NULL,
+  description varchar(100) NOT NULL,
+  addate TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) 
